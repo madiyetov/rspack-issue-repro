@@ -1,0 +1,8 @@
+{
+  "name": "@repro/root",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

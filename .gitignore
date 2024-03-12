@@ -1,0 +1,9 @@
+node_modules/
+
+.DS_Store
+
+# IDE and Code editors
+.idea
+.vscode/settings.json
+
+.prettierrc
