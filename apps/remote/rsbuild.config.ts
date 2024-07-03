@@ -1,5 +1,5 @@
 import path from 'path';
-import { defineConfig } from '@rsbuild/core';
+import { defineConfig, rspack } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { dependencies } from './package.json';
 
@@ -51,5 +51,10 @@ export default defineConfig({
     htmlPlugin: {
       publicPath: '/',
     },
+    // rspack: {
+    //   plugins: [new rspack.DefinePlugin({
+    //     BUILT_AT: `${Date.now()}`,
+    //   })],
+    // }
   },
 });
