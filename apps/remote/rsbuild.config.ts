@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig, rspack } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
+import CompressionPlugin from 'compression-webpack-plugin';
 import { dependencies } from './package.json';
 
 const deps = {
@@ -52,9 +53,9 @@ export default defineConfig({
       publicPath: '/',
     },
     // rspack: {
-    //   plugins: [new rspack.DefinePlugin({
-    //     BUILT_AT: `${Date.now()}`,
-    //   })],
-    // }
+    //   plugins: [
+    //     new CompressionPlugin(),
+    //   ],
+    // },
   },
 });
